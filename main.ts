@@ -32,7 +32,7 @@ basic.forever(function () {
         while (true) {
             basic.pause(beat_time - 20)
             led.setBrightness(255)
-            music.play(music.tonePlayable(880, 20), music.PlaybackMode.UntilDone)
+            music.play(music.tonePlayable(2800, 20), music.PlaybackMode.UntilDone)
             led.setBrightness(0)
         }
     }
