@@ -30,10 +30,10 @@ input.setSoundThreshold(SoundThreshold.Loud, 100)
 basic.forever(function () {
     if (beat_time > 0) {
         while (true) {
+            basic.pause(beat_time - 20)
             led.setBrightness(255)
             music.play(music.tonePlayable(880, 20), music.PlaybackMode.UntilDone)
             led.setBrightness(0)
-            basic.pause(beat_time - 20)
         }
     }
 })
